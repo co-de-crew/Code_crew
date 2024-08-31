@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="paymentform.css">
+</head>
+<body>
+    <form action="">
+        <h1>Payment Form</h1>
+        <h1>Traveller Information</h1>
+        <h3>Required details are followed by *</h3>
+        <p>Name:* <input type="text" name="name" required /></p>
+        <p>Vehicle ID:* <input type="text" name="train_name" required /></p>
+        <p>Ticket ID:* <input type="number" name="ticket_id" id="ticket_id" required /></p>
+        <p>Date Of Birth: <input type="date" name="date_of_birth" id="date_of_birth"></p>
+        <fieldset>
+            <legend>Gender *</legend>
+            <p>Male <input type="radio" name="gender" value="male" /></p>
+            <p>Female <input type="radio" name="gender" value="female" /></p>
+            <p>Other <input type="radio" name="gender" value="other" /></p>
+        </fieldset>
+        <p>Address:* <textarea name="address" id="address" cols="100" rows="5"></textarea></p>
+        <p>Email:* <input type="email" name="email" id="email" required></p>
+        <p>Pincode:* <input type="number" name="pincode" id="pincode" required></p>
+        <hr>
+        <h2>Payment Details:-</h2>
+        <p>Card Type:
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="upi">Upi</option>
+                <option value="mastercard">MasterCard</option>
+            </select>
+        </p>
+        <p>Card Number: <input type="number" name="card_number" id="card_number" required></p>
+        <p>Expiration Details: <input type="date" name="expiration_date" id="expiration_date" required></p>
+        <p>CVV:* <input type="password" name="cvv_number" id="cvv_number" required></p>
+        <p><input type="submit" value="Finalize Payment"></p>
+    </form>
+</body>
+</html>
